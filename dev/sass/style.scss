@@ -71,9 +71,6 @@ h2,
 .burger {
   width: 40px;
   height: 40px;
-  background: #2f343c;
-  border-radius: 3px;
-  box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
 
   @media (max-width:991px){
     display: block;
@@ -86,7 +83,7 @@ h2,
     position: absolute;
     width: 60%;
     height: 2px;
-    background: #ffcf4f;
+    background: #26cdd3;
     left: 20%;
     transition: transform 0.25s ease-in-out;
   }
@@ -123,11 +120,9 @@ h2,
 }
 
 .menu-btn {
-  position: absolute;
   display: none;
-  top: 0;
-  right: 15px;
-  z-index: 7;
+  position: relative;
+  transition: opacity 0.25s ease-in-out 0.25s;
 
   @media (max-width: 991px) {
     display: block;
@@ -135,7 +130,14 @@ h2,
 
   &--active {
     position: fixed;
-    top: 24px;
+    top: 15px;
+    right: 15px;
+    z-index: 7;
+  }
+
+  &--hidden {
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
   }
 }
 
@@ -276,6 +278,11 @@ h2,
     &:last-child {
       margin-right: 0;
     }
+
+    @media (max-width: 991px) {
+      display: block;
+      margin: 10px 0;
+    }
   }
   &__link {
     display: block;
@@ -304,13 +311,26 @@ h2,
 .main-menu {
   position: relative;
 
+  &__content {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    margin-right: -4px;
+  }
+
   @media (max-width: 991px) {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #ffcf4f;
+    background: #fff;
     text-align: center;
     transform: translateX(-100%);
     z-index: 5;
@@ -322,11 +342,11 @@ h2,
   &--active {
     transform: translateX(0);
   }
+  
 }
 
 .logo-mobile {
   display: none;
-  height: 140px;
 
   @media (max-width: 991px) {
     display: block;
@@ -351,9 +371,17 @@ h2,
   }
 
   &--personal {
-    
+
     &:before {
       background-image: url(../img/ico-personal.png);
+
+      @media (max-width: 1199px) {
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width: 1199px) {
+      font-size: 0;
     }
 
   }
@@ -370,6 +398,18 @@ h2,
   font-weight: 700;
   text-align: center;
   line-height: 1.2;
+
+  @media (max-width: 991px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 479px) {
+    font-size: 1.25rem;
+  }
 }
 
 .slider {
@@ -411,6 +451,10 @@ h2,
       background-image: url(../img/nav-right.png);
       background-position: 55% 50%;
       margin-left: 20px;
+    }
+
+    @media (max-width: 767px) {
+      display: none;
     }
 
   }
@@ -465,6 +509,8 @@ h2,
   position: relative;
   overflow: hidden;
   height: 206px;
+  max-width: 206px;
+  margin: 0 auto;
 
   &__name,
   &__props {
@@ -496,6 +542,10 @@ h2,
       &:after {
         display: inline-block;
         margin-left: 10px;
+
+        @media (max-width: 767px) {
+          display: none;
+        }
       }
       
     }
@@ -536,6 +586,15 @@ h2,
 
   }
 
+  &__text {
+    max-height: 154px;
+    overflow: hidden;
+
+    @media (max-width: 479px) {
+      max-height: 146px;
+    }
+  }
+
   &__btn {
     
     &--big {
@@ -561,6 +620,7 @@ h2,
   &--big {
     height: 398px;
     padding-top: 30px;
+    max-width: 350px;
 
     &:hover {
 
@@ -590,6 +650,8 @@ h2,
   box-shadow: 0 1.5rem 3rem hsla(0,0%,52%,.1);
   height: 340px;
   transition: transform 0.15s ease-in-out;
+  max-width: 256px;
+  margin: 0 auto;
 
   &__hover {
     padding: 10px 15px;
@@ -678,7 +740,12 @@ h2,
     padding: 10px 15px;
     background: #fff;
     height: 100%;
+    border-radius: 10px;
     transition: background-color 0.25s ease-in-out, transform 0.25s ease-in-out 0.25s;
+
+    @media (max-width: 479px) {
+      width: 100%;
+    }
   }
 
   &__img {
@@ -686,6 +753,10 @@ h2,
     float: left;
     height: 100%;
     transition: opacity 0s ease-in-out 0.25s;
+
+    @media (max-width: 479px) {
+      display: none;
+    }
   }
   
   &__name {
@@ -716,6 +787,10 @@ h2,
     .card-horizontal__hover {
       background: #26cdd3;
       transform: translateX(-50%);
+
+      @media (max-width: 479px) {
+        transform: translateX(0);
+      }
     }
 
   }
@@ -723,10 +798,13 @@ h2,
 }
 
 .tabs {
-  margin-bottom: -47px;
+  margin-bottom: -62px;
   margin-right: 130px;
   position: relative;
   z-index: 1;
+  overflow: auto;
+  white-space: nowrap;
+  padding-bottom: 15px;
 
   &__link {
     display: inline-block;
@@ -744,6 +822,10 @@ h2,
     color: #aaa;
     margin-right: 10px;
 
+    &:last-child {
+      margin-right: 0;
+    }
+
     &:hover,
     &:focus,
     &--active {
@@ -751,6 +833,10 @@ h2,
       border-color: #26cdd3;
       background-color: #26cdd3;
       text-decoration: none;
+    }
+
+    @media (max-width: 991px) {
+      padding: 0 1rem;
     }
 
   }
@@ -777,6 +863,10 @@ h2,
       transition: transform 0s ease-in-out, opacity 0.5s ease-in-out 0.5s;
     }
 
+  }
+
+  @media (max-width: 767px) {
+    margin-right: 0;
   }
 
 }
@@ -814,7 +904,11 @@ h2,
   border-radius: 5px;
 
   &__item{
-  	display: inline-block;
+    display: inline-block;
+    
+    @media (min-width: 992px) and (max-width: 1199px) {
+      margin: 0 10px;
+    }  
   }
 
   &__link{
@@ -868,7 +962,7 @@ h2,
     &--facebook:before {
       content:'\e041';
     }
-
+    
   }
 
 }
@@ -908,4 +1002,4 @@ h2,
     }
   }
 
-} 
+}

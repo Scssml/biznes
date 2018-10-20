@@ -13,7 +13,18 @@ $(document).ready(function(){
   $('input[type="tel"]').inputmask({mask:"+7 (999) 999-99-99"});
 
   $('.menu-btn').on('click', function(){
-    $(this).toggleClass('burger--active menu-btn--active');
+    var btn = $(this);
+    var timeout = 200;
+    btn.addClass('menu-btn--hidden');
+
+    if(btn.hasClass('menu-btn--active')) {
+      timeout = 0;
+    }
+
+    setTimeout(function() {
+      btn.removeClass('menu-btn--hidden');
+      btn.toggleClass('burger--active menu-btn--active');
+    }, timeout);
     $('.main-menu').toggleClass('main-menu--active');
     $('body').toggleClass('no-scrol');
     return false;
@@ -42,5 +53,7 @@ $(document).ready(function(){
 
     return false;
   });
+
+  $('.card, .card-vertical, .card-horizontal').on('touchend', function() {});
 
 });
