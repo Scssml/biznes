@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Страница объекта</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,700&subset=cyrillic-ext">
+    <link rel="stylesheet" href="fonts/socicon/stylesheet.css">
+    <link rel="stylesheet" href="css/all.min.css">
+  </head>
+  <body>
+    <header class="header mb-4">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-auto align-self-center align-self-lg-end order-2 order-lg-1">
+            <a href="/"><img src="/img/logo.png"></a>
+          </div>
+          <div class="col-3 col-lg-auto align-self-center align-self-lg-end order-1 order-lg-2">
+            <a href="#" class="burger menu-btn"><span></span></a>
+            <nav class="main-menu">
+              <div class="main-menu__content">
+                <div class="logo-mobile"><img src="/img/logo.png"></div>
+                <ul class="horizontal-menu">
+                  <li class="horizontal-menu__item">
+                    <a href="/" class="horizontal-menu__link horizontal-menu__link--active">О компании</a>
+                  </li>
+                  <li class="horizontal-menu__item">
+                    <a href="/" class="horizontal-menu__link">Каталог</a>
+                  </li>
+                  <li class="horizontal-menu__item">
+                    <a href="/" class="horizontal-menu__link">Начинающему инвестору</a>
+                  </li>
+                  <li class="horizontal-menu__item">
+                    <a href="/" class="horizontal-menu__link">Аналитика</a>
+                  </li>
+                  <li class="horizontal-menu__item">
+                    <a href="/" class="horizontal-menu__link">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="col-3 col-lg-auto align-self-center align-self-xl-end text-right order-3">
+            <a href="/" class="link-icon link-icon--personal">Личный кабинет</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container mb-4">
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-lg-3 mb-3">
+                <div class="select-custom">
+                  <span class="select-custom__name">Сфера</span>
+                  <span class="select-custom__value">Гостиницы</span>
+                  <ul class="select-custom__list">
+                    <li class="select-custom__item select-custom__item--selected" data-value="1">Гостиницы</li>
+                    <li class="select-custom__item" data-value="2">Отели</li>
+                    <li class="select-custom__item" data-value="3">Инвестиции</li>
+                    <li class="select-custom__item" data-value="4">Сельское хозяйство</li>
+                    <li class="select-custom__item" data-value="5">Апартаменты</li>
+                    <li class="select-custom__item" data-value="6">Рестораны</li>
+                  </ul>
+                  <input type="hidden" value="1">
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-3">
+                <div class="select-custom">
+                  <span class="select-custom__name">Стоимость</span>
+                  <span class="select-custom__value">300000₽ - 10000000₽</span>
+                  <div class="select-custom__list">
+                    <div class="slider-sum" data-min="300000" data-max="10000000" data-step="50000"></div>
+                  </div>
+                  <input type="hidden" class="select-custom__min" value="300000">
+                  <input type="hidden" class="select-custom__max" value="10000000">
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-3">
+                <div class="select-custom">
+                  <span class="select-custom__name">Прибыль</span>
+                  <span class="select-custom__value">50000₽ - 500000₽</span>
+                  <div class="select-custom__list">
+                    <div class="slider-sum" data-min="50000" data-max="500000" data-step="50000"></div>
+                  </div>
+                  <input type="hidden" class="select-custom__min" value="50000₽">
+                  <input type="hidden" class="select-custom__max" value="500000₽">
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-3">
+                <button class="btn btn--blue btn--radius btn--search w-100">ПОДОБРАТЬ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <ul class="breadcrumbs mb-4">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Каталог</a>
+          </li>
+          <li class="breadcrumbs__item">
+            Бригантина
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="detail-banner bg-img mb-5" style="background-image: url(img/detail.jpg)">
+          <span class="detail-banner__number">№ 2018 8</span>
+          <a href="#" class="detail-banner__favorite link-favorite font-weight-normal">В избранное</a>
+          <p class="detail-banner__name">Мини-отель на 14 номеров «Бригантина»</p>
+          <p class="detail-banner__profit">Доход: от 1 000 000 ₽</p>
+        </div>
+        <div class="row">
+          <div class="col-xl-9">
+            <div class="row mb-5">
+              <div class="col-lg-6">
+                <p class="line-bottom px-4 py-2 mb-0">Стоимость объекта: <b>105 788 000,00</b></p>
+              </div>
+              <div class="col-lg-6">
+                <p class="line-bottom px-4 py-2 mb-0">Рост стоимости актива: <b>значение значение</b></p>
+              </div>
+              <div class="col-lg-6">
+                <p class="line-bottom px-4 py-2 mb-0">Готовность: <b>готов</b></p>
+              </div>
+              <div class="col-lg-6">
+                <p class="line-bottom px-4 py-2 mb-0">Окупаемость по доходу: <b>значение значение</b></p>
+              </div>
+              <div class="col-lg-6">
+                <p class="line-bottom px-4 py-2 mb-0">Доп.инвестиции: <b>значение значение</b></p>
+              </div>
+              <div class="col-lg-6">
+                <p class="line-bottom px-4 py-2 mb-0">Местоположение: <b>Гурзуф</b></p>
+              </div>
+              <div class="col-lg-6">
+                <p class="line-bottom px-4 py-2 mb-0">Состав активов: <b>значение значение</b></p>
+              </div>
+              <div class="col-lg-6">
+                <p class="line-bottom px-4 py-2 mb-0">Тип объекта: <b>мини гостиница</b></p>
+              </div>
+              <div class="col-lg-6">
+                <p class="line-bottom px-4 py-2 mb-0">Площадь: <b>значение значение</b></p>
+              </div>
+              <div class="col-lg-6">
+                <p class="line-bottom px-4 py-2 mb-0">Стоимость объекта: <b>значение значение</b></p>
+              </div>
+              <div class="col-lg-6">
+                <p class="line-bottom px-4 py-2 mb-0">Кол-во номеров: <b>значение значение</b></p>
+              </div>
+              <div class="col-lg-6">
+                <p class="line-bottom px-4 py-2 mb-0">Стоимость объекта: <b>значение значение</b></p>
+              </div>
+            </div>
+            <div class="row mb-5">
+              <div class="col-md-auto">
+                <div class="row">
+                  <div class="col-4 col-md-12">
+                    <div class="advantage">
+                      <div class="advantage__ico advantage__ico--terrace"></div>
+                      <div class="advantage__name">Терасса</div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-12">
+                    <div class="advantage">
+                      <div class="advantage__ico advantage__ico--chef-hat"></div>
+                      <div class="advantage__name">Кухня</div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-12">
+                    <div class="advantage">
+                      <div class="advantage__ico advantage__ico--massage"></div>
+                      <div class="advantage__name">Спа</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non quam diam. Quisque ut ultrices massa. Cras hendrerit eu justo ut placerat. Aliquam tempus libero sed mauris imperdiet vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non quam diam. Quisque ut ultrices massa. Cras hendrerit eu justo ut placerat. Aliquam tempus libero sed mauris imperdiet vestibulum.<br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non quam diam. Quisque ut ultrices massa. Cras hendrerit eu justo ut placerat. Aliquam tempus libero sed mauris imperdiet vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non quam diam. Quisque ut ultrices massa. Cras hendrerit eu justo ut placerat. Aliquam tempus libero sed mauris imperdiet vestibulum.<br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non quam diam. Quisque ut ultrices massa. Cras hendrerit eu justo ut placerat. Aliquam tempus libero sed mauris imperdiet vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non quam diam. Quisque ut ultrices massa. Cras hendrerit eu justo ut placerat. Aliquam tempus libero sed mauris imperdiet vestibulum.<br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non quam diam. Quisque ut ultrices massa. Cras hendrerit eu justo ut placerat. Aliquam tempus libero sed mauris imperdiet vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non quam diam. Quisque ut ultrices massa. Cras hendrerit eu justo ut placerat. Aliquam tempus libero sed mauris imperdiet vestibulum.
+              </div>
+            </div>
+            <div class="owl-carousel slider-description mb-5">
+              <div class="slider-description__item">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="slider-description__img bg-img" style="background-image: url(img/detail.jpg);"></div>
+                  </div>
+                  <div class="col-md-4 align-self-center pt-3 pb-4 px-4">
+                      <div class="slider-description__name">Ресторан на территории отеля</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-description__item">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="slider-description__img bg-img" style="background-image: url(img/detail.jpg);"></div>
+                  </div>
+                  <div class="col-md-4 align-self-center pt-3 pb-4 px-4">
+                      <div class="slider-description__name">Ресторан на территории отеля</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-description__item">
+                <div class="row">
+                  <div class=" col-md-8">
+                    <div class="slider-description__img bg-img" style="background-image: url(img/detail.jpg);"></div>
+                  </div>
+                  <div class="col-md-4 align-self-center pt-3 pb-4 px-4">
+                      <div class="slider-description__name">Ресторан на территории отеля</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-lg-6">
+                <p class="icon icon--big icon--rub"><b>Стоимость объекта: <span class="color-blue">105 985 000 ₽</span></b></p>
+              </div>
+              <div class="col-lg-6">
+                <p class="icon icon--big icon--rub"><b>Доп.инвестиций: <span class="color-blue">не требуются</span></b></p>
+              </div>
+            </div>
+            <div class="mb-4">
+              <b>О бизнесе:</b>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non quam diam. Quisque ut ultrices massa. Cras hendrerit eu justo ut placerat. Aliquam tempus libero sed mauris imperdiet vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non quam diam. Quisque ut ultrices massa. Cras hendrerit eu justo ut placerat. Aliquam tempus libero sed mauris imperdiet vestibulum.<br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non quam diam. Quisque ut ultrices massa. Cras hendrerit eu justo ut placerat. Aliquam tempus libero sed mauris imperdiet vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non quam diam. Quisque ut ultrices massa. Cras hendrerit eu justo ut placerat. Aliquam tempus libero sed mauris imperdiet vestibulum.
+            </div>
+            <p class="text-center mb-5">
+              <a href="#" class="btn btn--blue btn--radius">ПОЛУЧИТЬ ПОЛНЫЙ ПАКЕТ ДОКУМЕНТОВ</a>
+            </p>
+            <div class="owl-carousel slider-gallery mb-5">
+              <a href="img/detail.jpg" rel="gallery" class="slider-gallery__item bg-img fancybox" style="background-image: url(img/detail.jpg);"></a>
+              <a href="img/detail.jpg" rel="gallery" class="slider-gallery__item bg-img fancybox" style="background-image: url(img/detail.jpg);"></a>
+              <a href="img/detail.jpg" rel="gallery" class="slider-gallery__item bg-img fancybox" style="background-image: url(img/detail.jpg);"></a>
+              <a href="img/detail.jpg" rel="gallery" class="slider-gallery__item bg-img fancybox" style="background-image: url(img/detail.jpg);"></a>
+              <a href="img/detail.jpg" rel="gallery" class="slider-gallery__item bg-img fancybox" style="background-image: url(img/detail.jpg);"></a>
+            </div>
+          </div>
+          <div class="col-xl-3 d-none d-xl-block">
+            <div class="card-vertical mb-5">
+              <div class="card-vertical__img bg-img" style="background-image: url(img/bg-item.jpg)"></div>
+              <div class="card-vertical__hover">
+                <p class="card-vertical__name">Апартаменты</p>
+                <p class="card-vertical__props">
+                  Цена: 5 000 000 ₽<br>Доход: 500 000 ₽
+                </p>
+                <p class="card-vertical__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisqu Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisqu Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisqu
+                </p>
+                <a href="/" class="card-vertical__btn btn btn--blue btn--radius w-100">Подробнее</a>
+              </div>
+              <a href="/" class="card-vertical__link link-arrow">Подробнее</a>
+            </div>
+            <div class="card-vertical mb-5">
+              <div class="card-vertical__img bg-img" style="background-image: url(img/bg-item.jpg)"></div>
+              <div class="card-vertical__hover">
+                <p class="card-vertical__name">Апартаменты</p>
+                <p class="card-vertical__props">
+                  Цена: 5 000 000 ₽<br>Доход: 500 000 ₽
+                </p>
+                <p class="card-vertical__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisqu Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisqu Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisqu
+                </p>
+                <a href="/" class="card-vertical__btn btn btn--blue btn--radius w-100">Подробнее</a>
+              </div>
+              <a href="/" class="card-vertical__link link-arrow">Подробнее</a>
+            </div>
+            <div class="card-vertical mb-5">
+              <div class="card-vertical__img bg-img" style="background-image: url(img/bg-item.jpg)"></div>
+              <div class="card-vertical__hover">
+                <p class="card-vertical__name">Апартаменты</p>
+                <p class="card-vertical__props">
+                  Цена: 5 000 000 ₽<br>Доход: 500 000 ₽
+                </p>
+                <p class="card-vertical__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisqu Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisqu Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisqu
+                </p>
+                <a href="/" class="card-vertical__btn btn btn--blue btn--radius w-100">Подробнее</a>
+              </div>
+              <a href="/" class="card-vertical__link link-arrow">Подробнее</a>
+            </div>
+            <div class="card-vertical mb-5">
+              <div class="card-vertical__img bg-img" style="background-image: url(img/bg-item.jpg)"></div>
+              <div class="card-vertical__hover">
+                <p class="card-vertical__name">Апартаменты</p>
+                <p class="card-vertical__props">
+                  Цена: 5 000 000 ₽<br>Доход: 500 000 ₽
+                </p>
+                <p class="card-vertical__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisqu Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisqu Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisqu
+                </p>
+                <a href="/" class="card-vertical__btn btn btn--blue btn--radius w-100">Подробнее</a>
+              </div>
+              <a href="/" class="card-vertical__link link-arrow">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <p class="h3">Финансовые показатели</p>
+        <div class="row mb-4">
+          <div class="col-lg-4 props-list order-1">
+            <div class="line-bottom px-4 py-2">
+              <div class="row">
+                <div class="col h4">Стоимость проекта</div>
+              </div>
+            </div>
+            <div class="line-bottom px-4">
+              <div class="row props-list__item">
+                <div class="col-7 align-self-center">Стоимость объекта недвижимости</div>
+                <div class="col-5 align-self-center text-right">105 788 000 ₽</div>
+              </div>
+            </div>
+            <div class="line-bottom px-4">
+              <div class="row props-list__item">
+                <div class="col-7 align-self-center">Стоимость бизнеса</div>
+                <div class="col-5 align-self-center text-right">1 057 780 ₽</div>
+              </div>
+            </div>
+            <div class="px-4">
+              <div class="row props-list__item">
+                <div class="col-7 align-self-center">Дополнительные инвестиции</div>
+                <div class="col-5 align-self-center text-right">0 ₽</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 props-list order-3 order-lg-2">
+            <div class="line-bottom px-4 py-2">
+              <div class="row">
+                <div class="col h4">Среднегодовая выручка</div>
+              </div>
+            </div>
+            <div class="line-bottom px-4">
+              <div class="row props-list__item">
+                <div class="col-7 align-self-center">Аренда номеров</div>
+                <div class="col-5 align-self-center text-right">23 889 770 ₽</div>
+              </div>
+            </div>
+            <div class="line-bottom px-4">
+              <div class="row props-list__item">
+                <div class="col-7 align-self-center">Кухня</div>
+                <div class="col-5 align-self-center text-right">7 515 700 ₽</div>
+              </div>
+            </div>
+            <div class="line-bottom px-4">
+              <div class="row props-list__item">
+                <div class="col-7 align-self-center">Баня</div>
+                <div class="col-5 align-self-center text-right">1 763 979 ₽</div>
+              </div>
+            </div>
+            <div class="px-4">
+              <div class="row props-list__item">
+                <div class="col-7 align-self-center">Парковка</div>
+                <div class="col-5 align-self-center text-right">497 363 ₽</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 props-list order-5 order-lg-3">
+            <div class="line-bottom px-4 py-2">
+              <div class="row">
+                <div class="col h4">Среднегодовые расходы</div>
+              </div>
+            </div>
+            <div class="line-bottom px-4">
+              <div class="row props-list__item">
+                <div class="col-7 align-self-center">Услуги химчистки/прачечной</div>
+                <div class="col-5 align-self-center text-right">192 314 ₽</div>
+              </div>
+            </div>
+            <div class="line-bottom px-4">
+              <div class="row props-list__item">
+                <div class="col-7 align-self-center">Услуги клининговой компании</div>
+                <div class="col-5 align-self-center text-right">0 ₽</div>
+              </div>
+            </div>
+            <div class="line-bottom px-4">
+              <div class="row props-list__item">
+                <div class="col-7 align-self-center">Расходные материалы</div>
+                <div class="col-5 align-self-center text-right">321 295 ₽</div>
+              </div>
+            </div>
+            <div class="line-bottom px-4">
+              <div class="row props-list__item">
+                <div class="col-7 align-self-center">Реклама/продвижение</div>
+                <div class="col-5 align-self-center text-right">1 791 733 ₽</div>
+              </div>
+            </div>
+            <div class="line-bottom px-4">
+              <div class="row props-list__item">
+                <div class="col-7 align-self-center">Расходы по кухне</div>
+                <div class="col-5 align-self-center text-right">3 006 280 ₽</div>
+              </div>
+            </div>
+            <div class="line-bottom px-4">
+              <div class="row props-list__item">
+                <div class="col-7 align-self-center">Расходы баня</div>
+                <div class="col-5 align-self-center text-right">55 200 ₽</div>
+              </div>
+            </div>
+            <div class="line-bottom px-4">
+              <div class="row props-list__item">
+                <div class="col-7 align-self-center">ФОТ персонала</div>
+                <div class="col-5 align-self-center text-right">2 040 000 ₽</div>
+              </div>
+            </div>
+            <div class="line-bottom px-4">
+              <div class="row props-list__item">
+                <div class="col-7 align-self-center">Налоги с ФОТ</div>
+                <div class="col-5 align-self-center text-right">612 000 ₽</div>
+              </div>
+            </div>
+            <div class="line-bottom px-4">
+              <div class="row props-list__item">
+                <div class="col-7 align-self-center">Содержание помещений</div>
+                <div class="col-5 align-self-center text-right">531 425 ₽</div>
+              </div>
+            </div>
+            <div class="px-4">
+              <div class="row props-list__item">
+                <div class="col-7 align-self-center">Содержание бассейна</div>
+                <div class="col-5 align-self-center text-right">0 ₽</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 order-2 order-lg-4 mb-3">
+            <div class="line-bottom line-top px-4 py-2 h4 text-right"><b>Итого: 106 125 008 ₽</b></div>
+          </div>
+          <div class="col-lg-4 order-4 order-lg-5 mb-3">
+            <div class="line-bottom line-top px-4 py-2 h4 text-right"><b>Итого: 31 125 008 ₽</b></div>
+          </div>
+          <div class="col-lg-4 order-6 mb-3">
+            <div class="line-bottom line-top px-4 py-2 h4 text-right"><b>Итого: 6 125 008 ₽</b></div>
+          </div>
+        </div>
+        <div class="row justify-content-around mb-3">
+          <div class="col-md-auto">
+            <p class="h4"><b>ДОХОДНОСТЬ ОБЪЕКТА: 25 000 000 ₽</b></p>
+          </div>
+          <div class="col-md-auto">
+            <p class="h4"><b>ОКУПАЕМОСТЬ: 5 лет</b></p>
+          </div>
+        </div>
+        <p class="text-center mb-5">
+          <a href="#" class="btn btn--blue btn--radius">ПОЛУЧИТЬ ПОЛНУЮ ФИНАНСОВУЮ МОДЕЛЬ</a>
+        </p>
+        <p class="h3">Схема работы с нами</p>
+        <div class="row justify-content-center mb-5">
+          <div class="col-xl-10">
+            <div class="row">
+              <div class="col-lg-6">
+                <p class="h4"><b>Базовый</b></p>
+                <ul class="list">
+                  <li class="list__item">Заказчик выбирает объект</li>
+                  <li class="list__item">
+                    Получает:
+                    <ul class="list list--level2">
+                      <li class="list__item list__item--level2">План действий</li>
+                      <li class="list__item list__item--level2">Юридическое сопровождение</li>
+                      <li class="list__item list__item--level2">Маркетинговую стратегию</li>
+                    </ul>
+                  </li>
+                  <li class="list__item">Реализует все работы по проекту самостоятельно</li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <p class="h4"><b>Продвинутый</b></p>
+                <ul class="list">
+                  <li class="list__item">Заказчик выбирает объект</li>
+                  <li class="list__item">Передает в управление АктивКапиталу</li>
+                  <li class="list__item">
+                    Согласовывает:
+                    <ul class="list list--level2">
+                      <li class="list__item list__item--level2">План действий</li>
+                      <li class="list__item list__item--level2">Юридическое сопровождение</li>
+                      <li class="list__item list__item--level2">Маркетинговую стратегию</li>
+                    </ul>
+                  </li>
+                  <li class="list__item">Мы реализуем все виды работ и обеспечиваем результат</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feedback-form bg-img" style="background-image: url(img/detail.jpg);">
+      <div class="container position-relative">
+        <p class="feedback-form__heading h1 text-center">Узнайте больше информации</p>
+        <form class="form">
+          <div class="row justify-content-center">
+            <div class="col-sm-6 col-lg-3 mb-4">
+              <input type="text" class="form__input" placeholder="Имя">
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4">
+              <input type="text" class="form__input" placeholder="E-mail">
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4">
+              <input type="tel" class="form__input" placeholder="Телефон">
+            </div>
+            <div class="col-sm-6 col-lg-2 mb-4">
+              <input type="submit" class="form__submit btn btn--blue btn--radius w-100" placeholder="Телефон">
+            </div>
+            <div class="col text-center">
+              <input type="checkbox" id="checkbox" class="form__checkbox">
+              <label for="checkbox" class="form__checkbox-label">Я согласен на обработку своих персональных данных</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="mt-5">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-4 col-lg-2 mb-4 text-center text-md-left">
+            <a href="/"><img src="/img/logo.png"></a>
+            <ul class="social text-center mt-4">
+              <li class="social__item"><a class="social__link social__link--linkedin" href="#"></a></li>
+              <li class="social__item"><a class="social__link social__link--twitter" href="#"></a></li>
+              <li class="social__item"><a class="social__link social__link--facebook" href="#"></a></li>
+              <li class="social__item"><a class="social__link social__link--instagram" href="#"></a></li>
+            </ul>
+          </div>
+          <div class="col-lg-auto d-none d-lg-block">
+            <a class="menu-heading mb-2" href="/">О КОМПАНИИ</a>
+            <ul class="vertical-menu">
+              <li class="vertical-menu__item">
+                <a class="vertical-menu__link" href="/">О компании</a>
+                <a class="vertical-menu__link" href="/">Новости</a>
+                <a class="vertical-menu__link" href="/">Сотрудники</a>
+                <a class="vertical-menu__link" href="/">Вакансии</a>
+                <a class="vertical-menu__link" href="/">Политика</a>
+                <a class="vertical-menu__link" href="/">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-auto d-none d-lg-block">
+            <a class="menu-heading mb-2" href="/">КАТАЛОГ</a>
+            <ul class="vertical-menu">
+              <li class="vertical-menu__item">
+                <a class="vertical-menu__link" href="/">Гостиницы</a>
+                <a class="vertical-menu__link" href="/">Отели</a>
+                <a class="vertical-menu__link" href="/">Инвестиции</a>
+                <a class="vertical-menu__link" href="/">Сельское хозяйство</a>
+                <a class="vertical-menu__link" href="/">Апартаменты</a>
+                <a class="vertical-menu__link" href="/">Ресто</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-auto d-none d-lg-block">
+            <a class="menu-heading" href="/">Начинающему инвестору</a>
+            <br><a class="menu-heading mb-2" href="/">АНАЛИТИКА</a>
+          </div>
+          <div class="col-md-5 col-lg-3 text-center text-md-right text-lg-left">
+            <p class="icon icon--address">Самара, Ново-садовая, 100, к.1, оф. 212</p>
+            <p class="icon icon--phone">+7 (000) 000 000 00</p>
+          </div>
+        </div>
+        <p class="mb-3 mt-3 mt-lg-5 text-center text-lg-left">Все права защищены</p>
+      </div>
+    </footer>
+    <script src="js/libs.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>

@@ -6,8 +6,37 @@ $(document).ready(function(){
     nav: false,
     margin: 10,
     dots: false,
-    nav:true,
+    nav: true,
     autoWidth: true
+  });
+
+  $('.slider-description').owlCarousel({
+    items: 1,
+    loop: true,
+    nav: false,
+    margin: 10,
+    dots: false,
+    nav: true
+  });
+
+  $('.slider-gallery').owlCarousel({
+    items: 3,
+    loop: true,
+    nav: false,
+    margin: 10,
+    dots: false,
+    nav: true,
+    responsive : {
+      0: {
+        items: 1
+      },
+      576: {
+        items: 2
+      },
+      768: {
+        items: 3
+      }
+    }
   });
 
   $('input[type="tel"]').inputmask({mask:"+7 (999) 999-99-99"});
