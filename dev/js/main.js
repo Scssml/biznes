@@ -7,7 +7,10 @@ $(document).ready(function(){
     margin: 10,
     dots: false,
     nav: true,
-    autoWidth: true
+    autoWidth: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true
   });
 
   $('.slider-description').owlCarousel({
@@ -16,7 +19,10 @@ $(document).ready(function(){
     nav: false,
     margin: 10,
     dots: false,
-    nav: true
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true
   });
 
   $('.slider-gallery').owlCarousel({
@@ -143,6 +149,20 @@ $(document).ready(function(){
       inputMax.val(ui.values[1]);
       selectValue.text(ui.values[0] + '₽ - ' + ui.values[1] + '₽');
     }
+  });
+
+  $('.gallery__more-link').on('click', function() {
+    var itemHidden = $(this).parents('.gallery').find('.gallery__hidden');
+
+    for(var i = 0; i < 3; i++){
+      $(itemHidden[i]).removeClass('gallery__hidden');
+    }
+
+    if(itemHidden.length <= 3) {
+      $(this).css('display', 'none');
+    }
+
+    return false;
   });
 
   $('.card, .card-vertical, .card-horizontal, .select-custom').on('touchend', function() {});
